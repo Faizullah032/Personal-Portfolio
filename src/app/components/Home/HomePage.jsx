@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './HomePage.module.css'; 
+// import styles from './HomePage.module.css'; 
 
 const socialLinks = [
   { icon: 'bx bxl-github', tooltip: 'Github' },
@@ -21,16 +21,16 @@ function HomePage() {
         <a href="#" className="btn">Download CV</a>
         <div className="sci">
           {socialLinks.map((link, index) => (
-            <a className={styles.tooltipParent} href="#" key={index}>
+            <a href="#" key={index}>
               <i className={link.icon}></i>
-              <span className={styles.tooltip}>{link.tooltip}</span>
+              <span className="tooltip">{link.tooltip}</span>
             </a>
           ))}
         </div>
       </div>
     </div>
-    <div className={styles.imgWrapper}>
-      <div className={`${styles.imgBox} ${styles.homeImg}`}>
+    <div className="img-wrapper">
+      <div className="img-box home-img">
         <img src="images/hero-image.png" alt="" />
       </div>
     </div>

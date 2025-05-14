@@ -1,6 +1,4 @@
 
-
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
 * {
@@ -121,8 +119,8 @@ p {
 .nav-list li:hover .tooltip,
 a:hover .tooltip,
 .portfolio-item:hover .work-info {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 
 .container {
