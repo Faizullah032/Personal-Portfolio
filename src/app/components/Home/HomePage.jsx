@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './HomePage.module.css'; // Assuming you have a CSS module for styles
+import styles from './HomePage.module.css'; 
 
 const socialLinks = [
   { icon: 'bx bxl-github', tooltip: 'Github' },
