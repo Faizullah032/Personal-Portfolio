@@ -1,3 +1,4 @@
+// header component
 import React from 'react';
 import 'boxicons/css/boxicons.min.css';
 import { navItems } from '../../utils/NavData/navItems';
