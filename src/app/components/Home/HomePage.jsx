@@ -2,10 +2,10 @@ import React from 'react';
 // import styles from './HomePage.module.css'; 
 
 const socialLinks = [
-  { icon: 'bx bxl-github', tooltip: 'Github' },
-  { icon: 'bx bxl-linkedin', tooltip: 'Linkedin' },
-  { icon: 'bx bxl-twitter', tooltip: 'Twitter' },
-  { icon: 'bx bxl-youtube', tooltip: 'Youtube' },
+  { icon: 'bx bxl-github', tooltip: 'Github', href: 'https://github.com/Faizullah032?tab=repositories' },
+  { icon: 'bx bxl-linkedin', tooltip: 'Linkedin', href: 'https://www.linkedin.com/in/faizullah-laghari-a675a62a0/' },
+  { icon: 'bx bxl-twitter', tooltip: 'Twitter', href: 'https://twitter.com/' },
+  { icon: 'bx bxl-youtube', tooltip: 'Youtube', href: 'https://www.youtube.com/' },
 ];
 
 function HomePage() {
@@ -21,7 +21,7 @@ function HomePage() {
         <a href="#" className="btn">Download CV</a>
         <div className="sci">
           {socialLinks.map((link, index) => (
-            <a href="#" key={index}>
+            <a href={link.href} key={index}>
               <i className={link.icon}></i>
               <span className="tooltip">{link.tooltip}</span>
             </a>
